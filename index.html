@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merlin5378_ - Twitch Streamer</title>
+  <style>
+    :root {
+      --accent: #ff66cc; /* Helles Pink */
+      --accent-dark: #cc3399;
+      --text: #ffffff; /* Alle Texte weiß */
+      --footer-bg: #000000; /* Footer schwarz */
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+      background: radial-gradient(circle at 20% 30%, #4b0082, #1a0033, #0a001a);
+      background-size: 200% 200%;
+      animation: galaxy 20s ease infinite;
+    }
+    @keyframes galaxy {
+      0% {background-position: 0% 0%;}
+      50% {background-position: 100% 100%;}
+      100% {background-position: 0% 0%;}
+    }
+    header {
+      text-align: center;
+      padding: 120px 20px;
+      background: rgba(0,0,0,0.3);
+      color: var(--text);
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--text);
+      text-shadow: 0 0 25px rgba(255,102,204,0.8);
+      animation: fadeInDown 1.5s ease;
+    }
+    header p {
+      margin-top: 20px;
+      font-size: 1.4rem;
+      color: var(--text);
+      animation: fadeInUp 2s ease;
+    }
+    .btn {
+      display: inline-block;
+      margin: 30px 15px;
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      background: var(--accent);
+      color: var(--text);
+      box-shadow: 0 0 20px rgba(255,102,204,0.8);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      z-index: 2;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(255,102,204,1);
+    }
+    section {
+      padding: 90px 20px;
+      text-align: center;
+      color: var(--text);
+    }
+    section h2 {
+      font-size: 2.7rem;
+      margin-bottom: 30px;
+      color: var(--text);
+      position: relative;
+      font-weight: 700;
+    }
+    .about, .schedule, .socials {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(0,0,0,0.4);
+      padding: 40px;
+      border-radius: 20px;
+      margin: 30px 0;
+      box-shadow: 0 0 25px rgba(255,102,204,0.25);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 1.5s ease;
+      color: var(--text);
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 40px rgba(255,102,204,0.7);
+    }
+    footer {
+      text-align: center;
+      padding: 50px;
+      background: var(--footer-bg);
+      font-size: 0.95rem;
+      opacity: 0.85;
+      color: var(--text);
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-60px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(60px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Merlin5378_</h1>
+    <p>Twitch Streamer • Gaming • Entertainment</p>
+    <a href="https://twitch.tv/Merlin5378_" class="btn">🎥 Live auf Twitch</a>
+    <a href="https://discord.gg/Qz4xyjYKmG" class="btn">💬 Join Discord</a>
+  </header>
+
+  <section class="about">
+    <h2>Über mich</h2>
+    <div class="card">
+      <p>Hey! Ich bin <strong>Merlin5378_</strong>, ein leidenschaftlicher Streamer. Ich liebe Gaming, interagiere gerne mit meiner Community und bringe Unterhaltung direkt zu dir. 💖</p>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <h2>Stream Zeiten</h2>
+    <div class="card">
+      <p>📅 Montag, Mittwoch, Freitag – 18:00 Uhr</p>
+      <p>🎮 Spontanstreams am Wochenende</p>
+    </div>
+  </section>
+
+  <section class="socials">
+    <h2>Folg mir auch hier</h2>
+    <div class="card">
+      <p>🐦 Twitter/X: <a href="#" style="color:var(--accent)">@Merlin5378</a></p>
+      <p>📸 Instagram: <a href="#" style="color:var(--accent)">@Merlin5378</a></p>
+      <p>🎬 YouTube: <a href="#" style="color:var(--accent)">Merlin5378</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Merlin5378_ – Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
